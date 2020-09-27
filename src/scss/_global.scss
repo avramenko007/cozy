@@ -1,0 +1,92 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    position: relative;
+    min-width: 320px;
+    color: $color-bodyText;
+    font-weight: $fontWeight-normal;
+    font-size: $fontSize-small;
+    font-family: $font-base;
+    line-height: $lineHeight-base;
+    background: $whiteGrayFirst;
+    box-sizing: border-box;
+}
+
+a {
+    color: $grayDark;
+    text-decoration: none;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+p {
+    font-family: $font-paragraph;
+    margin: 0 0 15px;
+    @media screen and ( min-width: 1024px) {
+        margin-bottom: 35px;
+    }
+}
+
+h1,
+h2,
+h3 {
+    font-weight: $fontWeight-normal;
+    line-height: $lineHeight-base;
+}
+
+h1 {
+    margin: 0 0 25px;
+    font-size: $fontSize-larger;
+    color: $white;
+    @media screen and ( min-width: 1024px) {
+        margin: 0 0 45px;
+        font-size: $fontSize-largest;
+    }
+}
+
+h2 {
+    font-size: $fontSize-xlarge;
+    margin: 0 0 20px;
+    color: $gray;
+    @media screen and ( min-width: 1024px) {
+        margin: 0 0 40px;
+        font-size: $fontSize-larger;
+    }
+}
+
+span {
+    color: $color-primary;
+    font-size: $fontSize-medium;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: $content-width;
+    padding: 0 $content-gutters;
+    margin: 0 auto;
+}
+
+.text-small{
+    display: block;
+    font-family: $font-paragraph;
+    font-size: $fontSize-min;
+    color: $grayReal;
+    font-style: $fontStyle-italic;
+}

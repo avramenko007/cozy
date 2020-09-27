@@ -1,0 +1,48 @@
+//Utilities must use a camel case name, prefixed with a u namespace and should be set in utilities.scss
+//e.g. u-pullRight
+//Syntax: u-<utilityName>
+.u-clearfix:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.u-noMargin {
+    margin: 0;
+}
+
+.u-centerMargin {
+    margin: 0 auto;
+}
+
+.u-noPadding {
+    padding: 0;
+}
+
+.u-stripped {
+    margin: 0;
+    padding: 0;
+}
+
+.u-text--center {
+    text-align: center;
+}
+
+.u-text--left {
+    text-align: left;
+}
+
+.u-text--right {
+    text-align: right;
+}
+
+.u-text--upper {
+    text-transform: uppercase;
+}
+
+//Lists
+.u-list--plain {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}

@@ -1,0 +1,26 @@
+.slider-box {
+    padding: 75px 0 65px;
+    background-color: $whiteGray;
+    h2 {
+        max-width: 450px;
+        text-align: center;
+        margin: 0 auto;
+    }
+    .btn {
+        margin: 0 auto;
+    }
+}
+
+.pet-name {
+    display: block;
+    font-family: $font-base;
+    font-size: $fontSize-medium;
+    color: $gray;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.slider-img {
+    margin-bottom: 30px;
+}
+

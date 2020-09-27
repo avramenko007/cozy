@@ -1,0 +1,23 @@
+@mixin font($font_name, $file_name, $weight) {
+    @font-face {
+        font-family: $font_name;
+        font-display: swap;
+        src: url("../fonts/#{$file_name}.woff") format("woff"),
+        url("../fonts/#{$file_name}.woff2") format("woff2");
+        font-weight: #{$weight};
+    }
+}
+
+@import "../fonts";
+@import "../setup/setup";
+@import "../vendor/normalize";
+@import "../global";
+@import "../partials/header";
+@import "../partials/hero";
+@import "../partials/about";
+@import "../partials/slider";
+@import "../partials/help";
+@import "../partials/footer";
+@import "../partials/donation";
+@import "../owl.theme.default";
+@import "../owl.carousel";

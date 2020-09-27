@@ -1,0 +1,52 @@
+<!doctype html>
+<!--[if IE 9]><html lang="en" class="no-js ie9"><![endif]-->
+<!--[if (gte IE 9) | !(IE)]><!-->
+<html lang="en" class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, inital-scale=1.0">
+    <title>Cozy</title>
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+    @@include('_header.html') @@include('_hero.html') @@include('_about.html') @@include('_slider.html') @@include('_help.html') @@include('_donation.html') @@include('_footer.html')
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+    <script src="./js/script.js" type="text/javascript" charset="utf-8"></script>
+    <script>
+        $(document).ready(function() {
+            $('.owl-carousel').owlCarousel({
+                loop: true,
+                margin: 50,
+                autoWidth: true,
+                responsiveClass: true,
+                nav: true,
+                dots: false,
+                responsive: {
+                    0: {
+                        items: 1,
+                        autoWidth: false
+                    },
+                    768: {
+                        items: 2,
+                        autoWidth: false
+                    },
+                    1024: {
+                        autoWidth: false,
+                        items: 3
+                    },
+                    1146: {
+                        items: 3,
+                        nav: true,
+                        loop: false,
+                        margin: 50
+                    }
+                }
+            })
+        })
+    </script>
+</body>
+
+</html>

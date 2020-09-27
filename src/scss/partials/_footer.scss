@@ -1,0 +1,36 @@
+.footer{
+	background-image: url('../img/footer-bg.jpg');
+	background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	padding: 75px 0 60px;
+	@media screen and (max-width: 1024px) {
+		padding: 25px 0;
+	}
+	h2{
+		color: $white;
+	}
+}
+
+.footer-column{
+	width: calc(100% / 3);
+	@media screen and (max-width: 909px){
+		width: 50%;
+		padding: 0px 10px;
+	}
+	@media screen and (max-width: 650px){
+		width: 100%;
+		padding: 20px;
+	}
+}
+
+.footer-info-box {
+	display: flex;
+	align-items: center;
+	margin-bottom: 20px;
+	&_img{
+		width:40px;
+		height:40px;
+		margin-right: 20px;
+	}
+}

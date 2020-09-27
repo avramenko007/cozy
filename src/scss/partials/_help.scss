@@ -1,0 +1,44 @@
+.help {
+    padding: 60px 0 10px;
+    h2 {
+        max-width: 450px;
+        text-align: center;
+		margin: 0 auto 70px;
+		@media screen and (max-width: 1024px) {
+			margin: 0 auto 35px;
+		}
+    }
+}
+
+.help-box{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.help-item{
+	width: 20%;
+	margin-bottom: 70px;
+	@media screen and (max-width: 1024px) {
+		width: calc(100% / 3);
+	}
+
+	@media screen and (max-width: 600px) {
+		width: 50%;
+	}
+
+	&_title{
+		color: $gray;
+		text-align: center;
+		display: block;
+	}
+	&_img{
+		width: 80px;
+		height: 80px;
+		margin: 0 auto 30px;
+		svg{
+			fill: $beige;
+		}
+	}
+}

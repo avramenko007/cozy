@@ -1,0 +1,31 @@
+.btn {
+    font-family: $font-base;
+    font-size: $fontSize-base;
+    line-height: $lineHeight-base;
+    color: $grayDark;
+    border-radius: 30px;
+    padding: 20px 40px;
+    width: max-content;
+    display: block;
+    transition: all 0.3s linear;
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+.btn-primary {
+    background-color: $beige;
+    &:hover {
+        background-color: $beigeLight;
+    }
+}
+
+.btn-slider {
+    background-color: transparent;
+    border: 2px solid $beige;
+    margin: 0 auto;
+    padding: 15px 40px;
+    &:hover {
+        background-color: $beige;
+    }
+}

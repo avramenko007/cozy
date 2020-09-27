@@ -1,0 +1,61 @@
+.donation {
+	padding: 70px 0 80px;
+	background-color: $whiteGray;
+	p{
+		font-family: $font-base;
+		color: $gray;
+		margin-bottom: 15px;
+	}
+	.column{
+		width: 50%;
+		display: flex;
+		align-items: center;
+		@media screen and (max-width: 767px) {
+			width:100%;
+			justify-content: center;
+		}
+	}
+
+	&_img{
+		width: 90%;
+		@media screen and (max-width: 767px) {
+			margin-bottom: 30px;
+		}
+
+	}
+
+	&_content{
+		width: 65%;
+		@media screen and (max-width: 1000px) {
+			width:100%;
+		}
+	}
+
+	.cart{
+		display: inline-block;
+		position: relative;
+		border-radius: 9px;
+		background-color: $beige;
+		padding: 10px 15px;
+		margin-bottom: 30px;
+		span{
+			font-family: $font-span;
+			color: $grayDark;
+			margin-left: 43px;
+		}
+		&::before {
+			position: absolute;
+			top: 50%;
+			left: 15px;
+			width: 28px;
+			height: 28px;
+			background-color: $grayDark;
+			background-repeat: no-repeat;
+			background-size: 100% 100%;
+			transform: translateY(-50%);
+			content: "";
+			mask-image: url('../img/icons/sprite.svg#credit-card');
+	
+		}
+	}
+}

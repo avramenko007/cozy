@@ -1,0 +1,21 @@
+.hero {
+    display: flex;
+    align-items: center;
+    min-height: 925px;
+    padding: 180px 0 100px;
+    background-image: url("../img/dog.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    @media screen and (max-width: 767px) {
+        min-height: auto;
+        padding-bottom: 100px;
+    }
+    p {
+        color: $color-secondary;
+        line-height: $lineHeight-big;
+    }
+    &_content {
+        max-width: 405px;
+    }
+}
